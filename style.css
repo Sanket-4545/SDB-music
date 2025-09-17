@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #000;
+  color: #fff;
+}
+
+.main {
+  display: flex;
+  height: calc(100vh - 80px);
+}
+
+/* Sidebar */
+.sidebar {
+  width: 220px;
+  background: #121212;
+  padding: 20px;
+}
+
+.sidebar .logo {
+  font-size: 28px;
+  color: #1db954;
+  margin-bottom: 20px;
+}
+
+.sidebar .menu {
+  list-style: none;
+}
+.sidebar .menu li {
+  padding: 12px 0;
+  font-size: 16px;
+  color: #b3b3b3;
+  cursor: pointer;
+}
+.sidebar .menu li:hover {
+  color: #fff;
+}
+
+
+.content {
+  flex: 1;
+  background: #181818;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.signupbtn {
+  background: transparent;
+  border: none;
+  color: #b3b3b3;
+  font-weight: bold;
+  cursor: pointer;
+}
+.signupbtn:hover {
+  color: #fff;
+}
+
+.loginbtn {
+  background: #fff;
+  color: #000;
+  border: none;
+  border-radius: 20px;
+  padding: 6px 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.section-title {
+  margin: 20px 0;
+  font-size: 24px;
+}
+
+.cardContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #252525;
+  padding: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.card:hover {
+  background: #333;
+}
+.card img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+.card h2 {
+  font-size: 16px;
+}
+.card p {
+  font-size: 13px;
+  color: #b3b3b3;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* Playbar */
+.playbar {
+  height: 80px;
+  background: #181818;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid #333;
+}
+
+.controls {
+  display: flex;
+  gap: 30px;
+  font-size: 24px;
+}
+.controls i {
+  cursor: pointer;
+  color: #b3b3b3;
+}
+.controls i:hover {
+  color: #fff;
+}
+audio{
+border-radius:none;
+ height: 9%;
+ width: 100%;
+padding: 2px;
+
+}
+/* Transparent audio player */
+.custom-audio {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  filter: opacity(0.6);
+}
+
+.custom-audio::-webkit-media-controls-panel {
+  background-color: transparent !important;
+}
+
+.custom-audio::-webkit-media-controls-play-button,
+.custom-audio::-webkit-media-controls-volume-slider,
+.custom-audio::-webkit-media-controls-timeline {
+  filter: brightness(0.8);
+}
+
+.custom-audio:hover {
+  filter: opacity(1);
+}
