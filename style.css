@@ -14,9 +14,30 @@ body {
   display: flex;
   height: calc(100vh - 80px);
 }
+
+.sidebar {
+  width: 220px;
+  background: #121212;
+  padding: 20px;
+}
+
 .SDB{
   height: 60px;
+} 
+
+.sidebar .menu {
+  list-style: none;
 }
+.sidebar .menu li {
+  padding: 12px 0;
+  font-size: 16px;
+  color: #b3b3b3;
+  cursor: pointer;
+}
+.sidebar .menu li:hover {
+  color: #fff;
+}
+
 
 
 
@@ -145,3 +166,4 @@ padding: 2px;
   filter: opacity(1);
 
 }
+
