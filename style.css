@@ -14,32 +14,11 @@ body {
   display: flex;
   height: calc(100vh - 80px);
 }
-
-/* Sidebar */
-.sidebar {
-  width: 220px;
-  background: #121212;
-  padding: 20px;
+.SDB{
+  height: 60px;
 }
 
-.sidebar .logo {
-  font-size: 28px;
-  color: #1db954;
-  margin-bottom: 20px;
-}
 
-.sidebar .menu {
-  list-style: none;
-}
-.sidebar .menu li {
-  padding: 12px 0;
-  font-size: 16px;
-  color: #b3b3b3;
-  cursor: pointer;
-}
-.sidebar .menu li:hover {
-  color: #fff;
-}
 
 
 .content {
@@ -164,4 +143,5 @@ padding: 2px;
 
 .custom-audio:hover {
   filter: opacity(1);
+
 }
