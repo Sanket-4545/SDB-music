@@ -109,8 +109,26 @@
       <i class="fa-solid fa-forward-step"></i>
     </div>
   </div>
+
+ <script>
+  // Select all audio tags
+  const audios = document.querySelectorAll("audio");
+
+  audios.forEach(audio => {
+    audio.addEventListener("play", () => {
+      // Pause every other audio when one starts
+      audios.forEach(other => {
+        if (other !== audio) {
+          other.pause();
+        }
+      });
+    });
+  });
+</script>
+  
 </body>
 </html>
+
 
 
 
