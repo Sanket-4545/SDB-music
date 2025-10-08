@@ -16,7 +16,7 @@ body {
 }
 
 .sidebar {
-  width: 220px;
+  /* width: 220px; */
   background: #121212;
   padding: 20px;
 }
@@ -166,4 +166,5 @@ padding: 2px;
   filter: opacity(1);
 
 }
+
 
